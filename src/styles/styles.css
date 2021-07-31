@@ -1,0 +1,201 @@
+body {
+background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+height: 100vh;
+font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main--container {
+    max-width: 330px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.main--container:before {
+    background-image: url(../../images/illustration-woman-online-mobile.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main--card {
+    max-width: 330px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 115px 25px 25px 25px;
+    position: relative;
+}
+
+.icon--container-illustration-mobile {
+    position: absolute;
+    top: -106px;
+    right: 50px;
+}
+
+.icon--container-illustration-desktop {
+    display: none;
+}
+
+.box-desktop {
+    display: none;
+}
+
+.bg-mobile {
+    top: 0;
+    right: 50px;
+}
+
+.card--title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.question--container {
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+    padding: 20px 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.question--text {
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.question--text-container {
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+.icon--container {
+    float: right;
+}
+
+.question--panel {
+    display: none;
+    overflow: hidden;
+}
+
+button {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 0;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.open {
+    transform: rotate(180deg);
+}
+
+.active {
+    border-bottom: none;
+}
+
+.active-text {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.active-panel {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 0 0 20px 0;
+}
+
+.panel--paragraph {
+    margin: 0;
+    line-height: 18px;
+}
+
+.attribution {
+    margin-top: 50px;
+    position: relative;
+    font-size: 10px;
+    width: 100%;
+}
+
+.attribution-text {
+    position: absolute;
+    width: 100%;
+    color: grey;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width:1440px) {
+    .icon--container-illustration-mobile {
+        display: none;
+    }
+
+    .icon--container-illustration-desktop {
+        display: block;
+        position: absolute;
+    }
+
+    .bg-desktop {
+        top: -56%;
+        left: -63%;
+    }
+
+    .main--container {
+        min-width: 920px;
+    }
+
+    .main--card {
+        max-width: 920px;
+        position: relative;
+        overflow: hidden;
+        padding: 70px 80px 80px 80px;
+    }
+
+    .card--title {
+        width: 58.5%;
+        text-align: right;
+    }
+
+    .question--container {
+        width: 50%;
+        float: right;
+    }
+
+    .illustration-desktop {
+        left: -9%;
+        top: 15%;
+        z-index: 10;
+    }
+
+    .box-desktop {
+        display: block;
+        position: absolute;
+        z-index: 11;
+        left: 11.5%;
+        bottom: 21.5%;
+    }
+}
