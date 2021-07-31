@@ -27,13 +27,21 @@ font-family: 'Kumbh Sans', sans-serif;
     position: relative;
 }
 
-.icon--container-illustration {
+.icon--container-illustration-mobile {
     position: absolute;
     top: -106px;
     right: 50px;
 }
 
-.bg--pattern {
+.icon--container-illustration-desktop {
+    display: none;
+}
+
+.box-desktop {
+    display: none;
+}
+
+.bg-mobile {
     top: 0;
     right: 50px;
 }
@@ -139,4 +147,55 @@ button {
 a {
     text-decoration: none;
     color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width:1440px) {
+    .icon--container-illustration-mobile {
+        display: none;
+    }
+
+    .icon--container-illustration-desktop {
+        display: block;
+        position: absolute;
+    }
+
+    .bg-desktop {
+        top: -56%;
+        left: -63%;
+    }
+
+    .main--container {
+        min-width: 920px;
+    }
+
+    .main--card {
+        max-width: 920px;
+        position: relative;
+        overflow: hidden;
+        padding: 70px 80px 80px 80px;
+    }
+
+    .card--title {
+        width: 58.5%;
+        text-align: right;
+    }
+
+    .question--container {
+        width: 50%;
+        float: right;
+    }
+
+    .illustration-desktop {
+        left: -9%;
+        top: 15%;
+        z-index: 10;
+    }
+
+    .box-desktop {
+        display: block;
+        position: absolute;
+        z-index: 11;
+        left: 11.5%;
+        bottom: 21.5%;
+    }
 }
